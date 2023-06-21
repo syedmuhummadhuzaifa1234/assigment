@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    
+    <h1>Registration Form</h1>
+    <form action="End.html">
+
+
+
+    Name :
+    <input placeholder="Enter Your Name"
+    name="name"
+    required type="text"
+    > <br><br>
+
+    Father's Name :
+    <input placeholder="Enter Your Fathers' Name"
+    name="fatherName"
+    required type="text"
+    > <br><br>
+
+    Mother's Name :
+    <input placeholder="Enter Your Mother's Name"
+    name="motherName"
+    required type="text"
+    ><br><br>
+
+    Phone Number :
+    <input placeholder="Phone Number"
+    name="phoneNumber"
+    required type="text"
+    maxlength="11"
+    ><br><br>
+
+    Email :
+    <input placeholder="Enter Your Email Address"
+    name="emailAddress"
+    required type ="email"
+    ><br><br>
+ 
+    Gender :
+    <input id="maleRadio" required type="radio" name="gender" value="male"  />
+    <label for="maleRadio">Male</label>
+    <label><input type="radio" name="gender" value="female" /> Female</label><br><br>
+
+    Date Of Birth :
+    <input placeholder="Enter Your Date Of Birth"
+    name="dateOfBirth"
+    required type="date"
+    ><br><br>
+<div class="address">
+    <label>Residential Address</label>
+    <textarea 
+    name="residentialAddress"
+    required type="text" 
+    cols="50"
+    rows="4"
+    class="borderRadius"></textarea><br><br>
+</div>
+
+    Blood Group :
+    <select 
+    class="form-select" 
+    name="bloodGroup">
+    <option>Choose Your Blood Group</option>
+    <option>A Postive (A+) </option>
+    <option>A Negative (A+) </option>
+    <option>B Postive (B+) </option>
+    <option>B Negative (B-) </option>
+    <option>O Postive (O+) </option>
+    <option>O Negative (O-) </option>
+    <option>AB Postive (AB+) </option>
+    <option>AB Negative (AB-) </option>
+   </select><br><br>
+   
+    Department :
+    <input id="cseradio" required type="radio" name="department" value="CSE"  />
+    <label for="cseradio">CSE</label>
+    <label><input type="radio" name="department" value="eee" /> EEE</label>
+    <label><input type="radio" name="department" value="bba" /> BBA</label><br><br>
+
+    Course :
+    <input type="checkbox" name="course" value="c" /> C
+    <input type="checkbox" name="course" value="c++" /> C++
+    <input type="checkbox" name="course" value="java" /> Java
+    <input type="checkbox" name="course" value="ai" /> AI
+    <input type="checkbox" name="course" value="mechanicalLearning" /> Mechanical Learning
+    <input type="checkbox" name="course" value="robotics" /> Robotics<br><br>
+
+    Photo :
+    <input placeholder="Attach Your Profile Photo"
+    name="photo"
+    required type="file"
+    ><br><br>
+
+
+<input type="submit" value="Submit your info" />
+    </form>
+</body>
+</html>
